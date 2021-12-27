@@ -23,8 +23,20 @@ the data can be used to predict MPG of the vehicle.
 
 ![Linear Regression](/images/lm_summary.png)
 
-### Suspension Coil Visualization
+### Summary Statistices on Suspension Coils
 ---
+Using R to find the mean, median, variance and Standard deviation for manufacturing of MechaCar 
+suspension coils.  
+
+![Summary Suspension Coil](/images/suspension_coil.png)
+
+When the data is examined together, the variance is within limits of MechaCar specifications.  However, when
+you look at the different lot number you can see that lot 3 is not within specifications because the 
+variance is out side the 100 lbs/inch limit.  
+
+![Summary of Suspension Coil by Lot#](/images/summary_by_lot.png)
+
+
 
 ### T-test on suspension Coils
 ---

@@ -19,3 +19,12 @@ yvals <- model$coefficients['vehicle_length']*mpg$vehicle_length +
   model$coefficients['(Intercept)'] #determine y-axis values from linear model
 plt <- ggplot(mpg,aes(x=vehicle_length,y=mpg)) #import dataset into ggplot2
 plt + geom_point() + geom_line(aes(y=yvals), color = "red") #plot scatter and linear model
+
+suspension_coil = read.csv('data/Suspension_coil.csv')
+head(suspension_coil)
+
+#summary table for the data
+total_summary = suspension_coil %>% summarise(mean=mean(PSI), median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+#summary table by lot#
+summary_lot = suspension_coil %>% group_by(Manufacturing_Lot) %>% summarise(mean=mean(PSI), median=median(PSI), Variance=var(PSI), SD=sd(PSI))
