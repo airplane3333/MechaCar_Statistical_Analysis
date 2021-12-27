@@ -40,7 +40,17 @@ variance is out side the 100 lbs/inch limit.
 
 ### T-test on suspension Coils
 ---
+When using a T-Test, there is little statistical difference in the data, it's not until you examan
+the production lots individually do we find a statistical difference with the p-value less than the 
+0.05 of statistical acceptance outside of radom chance. 
+![T-Test Summarys](/images/summary_t.test.png)
 
+P-Value is 1
+![T-Test Lot Number 1](/images/t-test_lot1.PNG)
+P-Value is 0.61
+![T-Test Lot Number 2](/images/t-test_lot2.PNG)
+Here is lot 3 we find that the p-value is less than 0.05% meaning that XXX
+![T-Test Lot Number 1](/images/t-test_lot3.png)
 
 ### Study Design: MechaCar vs Competition
 ---

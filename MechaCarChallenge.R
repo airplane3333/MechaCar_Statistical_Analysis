@@ -28,3 +28,12 @@ total_summary = suspension_coil %>% summarise(mean=mean(PSI), median=median(PSI)
 
 #summary table by lot#
 summary_lot = suspension_coil %>% group_by(Manufacturing_Lot) %>% summarise(mean=mean(PSI), median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+
+#t-test of suspension coils.
+t.test(suspension_coil$PSI, mu=1500)
+
+#t-test by lot number
+lot1 = t.test(subset(suspension_coil,Manufacturing_Lot=="Lot1")$PSI, mu=1500, conf.level=.99)
+lot2 = t.test(subset(suspension_coil,Manufacturing_Lot=="Lot2")$PSI, mu=1500, conf.level = .99)
+lot3 = t.test(subset(suspension_coil,Manufacturing_Lot=="Lot3")$PSI, mu=1500, conf.level = .99)
