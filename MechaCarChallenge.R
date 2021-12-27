@@ -31,7 +31,7 @@ summary_lot = suspension_coil %>% group_by(Manufacturing_Lot) %>% summarise(mean
 
 
 #t-test of suspension coils.
-t.test(suspension_coil$PSI, mu=1500)
+summary_t.test = t.test(suspension_coil$PSI, mu=1500)
 
 #t-test by lot number
 lot1 = t.test(subset(suspension_coil,Manufacturing_Lot=="Lot1")$PSI, mu=1500, conf.level=.99)
