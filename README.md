@@ -46,15 +46,18 @@ the production lots individually do we find a statistical difference with the p-
 
 ![T-Test Summary](/images/summary_t.test.png)
 
-P-Value is 1
+The P-Value for Lot1 is 1
 
 ![T-Test Lot Number 1](/images/t-test_lot1.PNG)
 
-P-Value is 0.61
+The P-Value for Lot2 is 0.61
 
 ![T-Test Lot Number 2](/images/t-test_lot2.PNG)
 
-Here is lot 3 we find that the p-value is less than 0.05% meaning that XXX
+The P-Value for Lot3 is 0.04 meaning that the data is normally distributed and 
+is less than the significance level of 0.05 and therefore supports the null hypothesis that there is 
+something more than just random chance.
+ 
 
 ![T-Test Lot Number 1](/images/t-test_lot3.png)
 
